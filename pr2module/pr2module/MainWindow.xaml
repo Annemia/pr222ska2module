@@ -1,0 +1,26 @@
+﻿<Window x:Class="pr2module.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pr2module"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="Aqua">
+            <Image Width="45" Height="45" HorizontalAlignment="Left" Margin="5"/>
+            <Button x:Name="btnBack" HorizontalAlignment="Right" Content="Назад" Click="btnBack_Click"/>
+        </Grid>
+        <Frame x:Name="FrmMain" Grid.Row="1" NavigationUIVisibility="Hidden"/>
+        <Button x:Name="btn1task1" Content="Задание 1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Height="58" Width="102" Click="btn1task1_Click" Background="#FF5882D4"/>
+        <Button x:Name="btn2task2" Content="Задание 2" HorizontalAlignment="Left" Margin="10,88,0,0" Grid.Row="1" VerticalAlignment="Top" Height="58" Width="102" Click="btn2task2_Click" Background="#FFFD8E8E"/>
+        <Button x:Name="btn3task3" Content="Задание 3" HorizontalAlignment="Left" Margin="10,167,0,0" Grid.Row="1" VerticalAlignment="Top" Height="58" Width="102" Click="btn3task3_Click" Background="#FF99D8CB"/>
+        <Button x:Name="btn4task4" Content="Задание 4" HorizontalAlignment="Left" Margin="10,242,0,0" Grid.Row="1" VerticalAlignment="Top" Height="58" Width="102" Click="bt4task4_Click" Background="AntiqueWhite"/>
+        <Button x:Name="btn5task5" Content="Задание 5" HorizontalAlignment="Left" Margin="137,10,0,0" Grid.Row="1" VerticalAlignment="Top" Height="58" Width="102" Click="bt5task5_Click" Background="BurlyWood"/>
+    </Grid>
+</Window>
